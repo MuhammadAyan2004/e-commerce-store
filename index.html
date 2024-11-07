@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-mart</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="parent">
+    <div class="offer">
+        <p>Free shipping, 30 days return or refund guarantee</p>
+        <div class="log">
+            <a href="#">Log In</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <p class="sty">E-mart</p>
+            <p>Store</p>
+        </div>
+            <div class="links">
+                <a href="index.html" id="a">Home</a>
+                <a href="about.html" id="a">About</a>
+                <a href="products.html" id="a">Products</a>
+                <a href="contact.html" id="a">contact</a>
+                <button type="button"><a href="addToCart.html" class="cartvalue">
+                    <i class="ri-shopping-cart-fill"></i>&nbsp;&nbsp;&nbsp;0</a>
+                </button>
+            </div>
+    </nav>
+    
+    <div class="banner">
+        <img src="images/final.png">
+        <div class="text">
+            <p>EXPLORE THE LATEST IN TECH INDUSTRIES</p>
+            <h1>Your Destination For Cutting-Edge Gadgets!</h1>
+            <p>Welcome to Thapa eComStore, your ultimate destination for cutting-edge gadgets! Explore the latest in tech innovation and style with us. Shop now and discover a world of possibilities!</p>
+            <button>Explore Our Products</button>
+        </div>
+    </div>
+
+    <div class="discount">
+        <div class="dis-offer">
+            <div class="main-off">
+                <p>NEW YEAR SALE </p>
+                <h2>Get And Extra 50%</h2>
+                <a href="#">SHOW NOW</a>
+                    <img src="images/head.png" id="p-pic1">
+            </div>
+            <div class="main-off">
+                <p>NEW YEAR SALE </p>
+                <h2>Get And Extra 40%</h2>
+                <a href="#">SHOW NOW</a>
+                    <img src="images/watch.png" id="p-pic2">
+            </div>
+            <div class="main-off">
+                <p>NEW YEAR SALE </p>
+                <h2>Get And Extra 50%</h2>
+                <a href="#">SHOW NOW</a>
+                    <img src="images/laptop.png" id="p-pic3">
+            </div>
+        </div>
+        <div class="dis-offer-2">
+            <div class="main-on">
+                <i class="ri-truck-fill"></i>
+              <div>
+                <h5>Worldwide Shipping</h5>
+                <p>Order Above $100</p>
+              </div>
+            </div>
+            <div class="main-on">
+                <i class="ri-loop-right-line"></i>
+                <div>
+                    <h5>Worldwide Shipping</h5>
+                    <p>Order Above $100</p>
+                  </div>
+            </div>
+            <div class="main-on">
+                <i class="ri-money-dollar-box-line"></i>
+                <div>
+                    <h5>Worldwide Shipping</h5>
+                    <p>Order Above $100</p>
+                  </div>
+            </div>
+            <div class="main-on">
+                <i class="ri-customer-service-line"></i>
+                <div>
+                    <h5>Worldwide Shipping</h5>
+                    <p>Order Above $100</p>
+                  </div>
+            </div>
+        </div>
+    </div>
+<!-- start product section -->
+    <section class="section-product">
+        <div class="pcontainer">
+            <div class="section-comman-heading">Checkout E-mart Store</div>
+        </div>
+        <section class="carts">
+            <div class="carts2">
+            <div id="productcontainer">
+
+            </div>
+        </div>
+        </section>
+    </section>
+
+<!-- start product templete section -->
+    <template id="productTemplate">
+          <div class="card" id="cardValue">
+            <article class="information [card]">
+                <span id="category"></span>
+
+                <div class="imageContainer">
+                    <img class="productImage" src="" alt="">
+                </div>
+
+                <h2 class="productName"></h2>
+
+                <div class="productRating">
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                    <i class="ri-star-s-fill"></i>
+                </div>
+
+                <p class="productDescription"></p>
+
+                <div class="productPriceElement">
+                    <p class="productPrice"></p>
+                    <p class="productActualPrice"></p>
+                </div>
+
+                <div class="productAvailable">
+                    <p class="productProperty">Total stock available:</p>
+                    <p class="productStock"></p>
+                </div>
+                
+            <div class="quantity">
+                <p class="quanta">Quantity</p>
+                <div class="quanta-btn">
+                    <button id="increase">+</button>
+                    <p id="numbers">1</p>
+                    <button id="decrease">-</button>
+                </div>
+            </div>
+            <button id="addToCart"><i class="ri-shopping-cart-fill"></i>Add to cart</button>
+
+            </article>
+          </div>
+    </template>
+<!-- end product templete section -->
+
+<!-- end product section -->
+    <div class="About">
+        <div class="abt">
+            <h1>Why Choose E-mart Store</h1>
+            <p>Choose E-mart EduHub for a holistic,enriching that empowers you to achive your goals.</p>
+        </div>
+        <div class="thought">
+            <div class="tht1">
+                <div class="thought1">
+                    <p id="edit">1</p>
+                    <h4 id="edit1">Wide selection</h4>
+                    <p>"Welcome to [Your Brand Name], your one-stop destination for all your shopping needs! Whether you're looking for the latest fashion trends, high-quality electronics, or everyday essentials, we’ve got you covered."</p>
+                </div>
+                <div class="thought1">
+                    <p id="edit">2</p>
+                    <h4 id="edit1">Quality Assurance</h4>
+                    <p>"Welcome to [Your Brand Name], your one-stop destination for all your shopping needs! Whether you're looking for the latest fashion trends, high-quality electronics, or everyday essentials, we’ve got you covered."</p>
+                </div>
+                <div class="thought1">
+                    <p id="edit">3</p>
+                    <h4 id="edit1">Competitive Prices</h4>
+                    <p>"Welcome to [Your Brand Name], your one-stop destination for all your shopping needs! Whether you're looking for the latest fashion trends, high-quality electronics, or everyday essentials, we’ve got you covered."</p>
+                </div>
+            </div>
+            <div class="tht2">
+                <div><img src="images/about.png"></div>
+            </div>
+            <div class="tht3">
+                <div class="thought1">
+                    <p id="edit">4</p>
+                    <h4 id="edit1">Wide selection</h4>
+                    <p>"Welcome to [Your Brand Name], your one-stop destination for all your shopping needs! Whether you're looking for the latest fashion trends, high-quality electronics, or everyday essentials, we’ve got you covered."</p>
+                </div>
+                <div class="thought1">
+                    <p id="edit">5</p>
+                    <h4 id="edit1">Quality Assurance</h4>
+                    <p>"Welcome to [Your Brand Name], your one-stop destination for all your shopping needs! Whether you're looking for the latest fashion trends, high-quality electronics, or everyday essentials, we’ve got you covered."</p>
+                </div>
+                <div class="thought1">
+                    <p id="edit">6</p>
+                    <h4 id="edit1">Competitive Prices</h4>
+                    <p>"Welcome to [Your Brand Name], your one-stop destination for all your shopping needs! Whether you're looking for the latest fashion trends, high-quality electronics, or everyday essentials, we’ve got you covered."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="first">
+            <div class="logo change">
+                <p class="sty">E-mart</p>
+                <p>Store</p>
+            </div>
+            <p id="span">Welcome to E-Mart store, your ultimate destination for cutting-edges gadgets!</p>
+        </div>
+        <div class="sec">
+            <ul>SHOPPING
+
+            <li>Computer Store</li>
+            <li>Laptop store</li>
+            <li>Accessories</li>
+            <li>Sales & Discount</li>
+        </ul>
+        </div>
+        <div class="three">
+            <ul>EXPERIENCE
+
+            <li>Contact Us</li>
+            <li>Payment Method</li>
+            <li>Return & exchange</li>
+            <li>Delivery</li>
+        </ul>
+        </div>
+        <div class="fourth">
+            <ul>NEWSLETTER
+            <li>Be the first to know about arrivals, sales & promos</li></ul>
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="main.js"></script>
+
+</body>
+</html>
