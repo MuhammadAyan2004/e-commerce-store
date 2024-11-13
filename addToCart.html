@@ -8,37 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="parent">
-    <div class="offer">
-        <p>Free shipping, 30 days return or refund guarantee</p>
-        <div class="log">
-            <a href="#">Log In</a>
-            <a href="#">Sign Up</a>
-        </div>
-    </div>
-
-    <nav>
-        <div class="logo">
-            <p class="sty">E-mart</p>
-            <p>Store</p>
-        </div>
-            <div class="links">
-                <a href="index.html" id="a">Home</a>
-                <a href="about.html" id="a">About</a>
-                <a href="products.html" id="a">Products</a>
-                <a href="contact.html" id="a">contact</a>
-                <button type="button"><a href="addToCart.html" class="cartvalue">
-                    <i class="ri-shopping-cart-fill"></i>&nbsp;&nbsp;&nbsp;0</a>
-                </button>
-            </div>
-    </nav>
-
+<div class="parent">
+<header class="headers">
+    <script src="header.js"></script>
+</header>
     <section class="addToCartElem">
         <div class="container2">
             <section class="visibleProduct">
-             <div id="productCartContainer">
-                </div>
-                
+             <div id="productCartContainer"></div>
             </section>
             <section class="productCartTotalElem">
                             <div class="productCartTotalEleme">
@@ -60,15 +37,21 @@
             </section>
         </div>
     </section>
-    <template id="productCartTemplate">
-        <div class="card" id="cardValue">
-            <article class="information [card]">
 
-                <span id="category">computer</span>
-                    <img class="cartProductImage" src="images/laptop.png">
-                <h2 class="productcartName">Laptop</h2>
+    <template id="productCartTemplate">
+        <div class="card2" id="cardValue">
+            <article class="information2 [card]">
+
+                <div class="cate">
+                    <span id="category" class="cat"></span>
+                </div>
+                
+                    <div class="main_img">
+                    <img class="cartProductImage" src="">
+                </div>
+                    <h5 class="productcartName"></h5>
                 <div class="productCartPriceElement">
-                    <p class="productCartPrice">7000</p>
+                    <p class="productCartPrice"></p>
                 </div>
             <div class="quantity">
                 <div class="quanta-btn">
@@ -83,41 +66,11 @@
         </div>
   </template>
 </div>
-<footer>
-        <div class="container">
-            <div class="first">
-                <div class="logo change">
-                    <p class="sty">E-mart</p>
-                    <p>Store</p>
-                </div>
-                <p id="span">Welcome to E-Mart store, your ultimate destination for cutting-edges gadgets!</p>
-            </div>
-            <div class="sec">
-                <ul>SHOPPING
-
-                <li>Computer Store</li>
-                <li>Laptop store</li>
-                <li>Accessories</li>
-                <li>Sales & Discount</li>
-            </ul>
-            </div>
-            <div class="three">
-                <ul>EXPERIENCE
-
-                <li>Contact Us</li>
-                <li>Payment Method</li>
-                <li>Return & exchange</li>
-                <li>Delivery</li>
-            </ul>
-            </div>
-            <div class="fourth">
-                <ul>NEWSLETTER
-                <li>Be the first to know about arrivals, sales & promos</li></ul>
-            </div>
-        </div>
+<footer class="footer-section">
+    <script  src="footer.js"></script>  
 </footer>
 
-    <script type="module" src="showAddToCart.mjs"></script>
+    <script type="module" src="showAddToCart.js"></script>
 
 </body>
 </html>
