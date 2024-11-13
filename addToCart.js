@@ -1,3 +1,5 @@
+import { getCartProductFromLS } from "./getCartProduct.js";
+import { showToast } from "./showToast.js";
 export const addToCart = (event, id, stock) => {
     
     let arrLocalStorageProduct = getCartProductFromLS();
@@ -20,8 +22,9 @@ export const addToCart = (event, id, stock) => {
         updatedCart=arrLocalStorageProduct.map((curElem)=>{
             return curElem.id === id ? updatedCart : curElem;
         })
-        console.log(updatedCart);
+        // console.log(updatedCart);
         localStorage.setItem("cartProductLS", JSON.stringify(updatedCart));
+        showToast("add",id)
     }
     
     if(existingprod){
@@ -33,24 +36,8 @@ export const addToCart = (event, id, stock) => {
 
     arrLocalStorageProduct.push({ id, quantity, price });
     localStorage.setItem("cartProductLS", JSON.stringify(arrLocalStorageProduct));
-
+    showToast("add",id)
     updateCartValue(arrLocalStorageProduct);
-};
-
-const updateCartValue = (cartProduct) => {
-    const cartvalue = document.querySelector(".cartvalue");
-    cartvalue.innerHTML = `<i class="ri-shopping-cart-fill"></i>&nbsp;&nbsp;&nbsp;${cartProduct.length}`;
-};
-
-export const getCartProductFromLS = () => {
-    let cartProduct = localStorage.getItem("cartProductLS");
-
-    if (!cartProduct) {
-        return [];
-    }
-    cartProduct = JSON.parse(cartProduct);
-    updateCartValue(cartProduct);
-    return cartProduct;
 };
 document.addEventListener("DOMContentLoaded", () => {
     getCartProductFromLS();
