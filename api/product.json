@@ -4,7 +4,7 @@
         "name":"Laptop",
         "Category":"Computers",
         "brand":"ExampleBrand",
-        "price":999.99,
+        "price":999,
         "stock":50,
         "description":"powerful laptop with a quad-core i5 processor, 8GB Ram, 256GB SSD, and a 14-inch FHD display.",
         "image":"images/laptop.png"
@@ -24,7 +24,7 @@
         "name":"wireless Headphones",
         "Category":"Audio",
         "brand":"Faster",
-        "price":1599.99,
+        "price":1599,
         "stock":20,
         "description":"powerful laptop with a quad-core i5 processor, 8GB Ram, 256GB SSD, and a 14-inch FHD display.",
         "image":"images/head.png"
@@ -34,7 +34,7 @@
         "name":"Watches",
         "Category":"Wearables",
         "brand":"Casio",
-        "price":5000,
+        "price":4999,
         "stock":10,
         "description":"powerful laptop with a quad-core i5 processor, 8GB Ram, 256GB SSD, and a 14-inch FHD display.",
         "image":"images/watch.png"
@@ -44,7 +44,7 @@
         "name":"speakers",
         "Category":"Audio",
         "brand":"Sound beats",
-        "price":599.99,
+        "price":599,
         "stock":90,
         "description":"powerful laptop with a quad-core i5 processor, 8GB Ram, 256GB SSD, and a 14-inch FHD display.",
         "image":"images/speakers.png"
@@ -54,7 +54,7 @@
         "name":"Television",
         "Category":"video",
         "brand":"samsung",
-        "price":12999.99,
+        "price":12999,
         "stock":50,
         "description":"powerful laptop with a quad-core i5 processor, 8GB Ram, 256GB SSD, and a 14-inch FHD display.",
         "image":"images/tele.png"
