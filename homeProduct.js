@@ -1,5 +1,6 @@
 import { addToCart } from "./addToCart.js";
 import { homeQuantityToogle } from "./homeQuantityToogle.js";
+
 export const showProductContainer = (products) => {
 
 const productContainer = document.getElementById("productcontainer");
@@ -13,7 +14,7 @@ const productTemplate = document.getElementById("productTemplate");
   products.forEach((curElem) => {
     const { id, Category, name, price, description, stock, image } = curElem;
 
-    const tempClone = document.importNode(productTemplate.content, true);
+    const tempClone = document.importNode(productTemplate.content,true);
 
     tempClone.querySelector("#cardValue").setAttribute("id",`card${id}`)
     tempClone.querySelector("#category").textContent = Category;
