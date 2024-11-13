@@ -1,12 +1,12 @@
-// import { updateCartValue } from "./updateCart";
+import { updateCartValue } from "./updateCart";
 
-// export const getCartProductFromLS = ()=>{
-//     let cartProduct = localStorage.getItem("cartProductLS");
+export const getCartProductFromLS = ()=>{
+    let cartProduct = localStorage.getItem("cartProductLS");
 
-//     if(!cartProduct){
-//         return [];
-//     }
-//     cartProduct = JSON.parse(cartProduct);
-//     updateCartValue(cartProduct);
-//     return cartProduct;
-// } 
+    if (!cartProduct) {
+        return [];
+    }
+    cartProduct = JSON.parse(cartProduct);
+    updateCartValue(cartProduct);
+    return cartProduct;
+} 
