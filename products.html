@@ -13,32 +13,30 @@
 <header class="headers">
     <script src="header.js"></script>
 </header>
+<div class="megaDiscount">
+    <script src="discount.js"></script>
+</div>
         <!-- start product section -->
-        <section class="section-product">
-            <div class="pcontainer">
-                <div class="section-comman-heading">Checkout E-mart Store</div>
-            </div>
-            <section class="carts">
-                <div class="carts2">
-                <div id="productcontainer">
-
-                </div>
-            </div>
-            </section>
-        </section>
-
+<section class="section-product">
+    <div class="pcontainer">
+        <div class="section-comman-heading">Checkout E-mart Store</div>
+    </div>
+    <section class="carts">
+        <div class="carts2">
+        <div id="productcontainer">
+        </div>
+    </div>
+    </section>
+</section>
 <!-- start product templete section -->
         <template id="productTemplate">
               <div class="card" id="cardValue">
                 <article class="information [card]">
                     <span id="category"></span>
-
                     <div class="imageContainer">
                         <img class="productImage" src="" alt="">
                     </div>
-
                     <h2 class="productName"></h2>
-
                     <div class="productRating">
                         <i class="ri-star-s-fill"></i>
                         <i class="ri-star-s-fill"></i>
@@ -46,19 +44,15 @@
                         <i class="ri-star-s-fill"></i>
                         <i class="ri-star-s-fill"></i>
                     </div>
-
                     <p class="productDescription"></p>
-
                     <div class="productPriceElement">
                         <p class="productPrice"></p>
                         <p class="productActualPrice"></p>
                     </div>
-
                     <div class="productAvailable">
                         <p class="productProperty">Total stock available:</p>
                         <p class="productStock"></p>
                     </div>
-                    
                 <div class="quantity">
                     <p class="quanta">Quantity</p>
                     <div class="quanta-btn">
@@ -68,19 +62,15 @@
                     </div>
                 </div>
                 <button id="addToCart"><i class="ri-shopping-cart-fill"></i>Add to cart</button>
-
                 </article>
               </div>
         </template>
 <!-- end product templete section -->
-
 <!-- end product section -->
-
     </div>
     <footer class="footer-section">
         <script  src="footer.js"></script>  
     </footer>
-
     <script type="module" src="main.js"></script>
 </body>
 </html>
