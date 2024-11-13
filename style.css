@@ -313,7 +313,7 @@ nav{
         background-color: #023E8A;
     }
 }
-footer{
+.footer-section{
     width: 100%;
     height: 40vh;   
     background-color: #212529;
@@ -429,7 +429,7 @@ footer{
     filter: invert(100%);
 }
 .card{
-    width: 23vw;
+    width: 26vw;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 0.1px grey;
     margin-bottom: 40px;
@@ -454,9 +454,8 @@ footer{
 .imageContainer img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
-    transform: scale(1);
 }
 .information h2{
     font-size: 28px;
@@ -557,17 +556,18 @@ footer{
     width: 100%;
     height: 100%;    
     margin-top: 100px;
-    display: flex;
-    justify-content: center;
 }
 #productcontainer{
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    /* padding-inline: 100px; */
 }
+
 .productCartTotalElem{
-    width: 60%;
+    width: 80%;
     height: 50vh;
     display: flex;
     align-items: center;
@@ -600,54 +600,136 @@ footer{
     justify-content: center;
     padding: 20px;
 }
+
+
 .visibleProduct{
-    width: 60%;
-    border: 1px solid black;
-    display: none;
+    width: 80%;
+    border: 1px solid rgb(197, 197, 197);
+    /* display: none; */
 }
+
 #productCartContainer{
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* gap: 10px; */
+    gap: 20px;
 }
-#productCartContainer article{
+.card2{
     width: 100%;
     height: 10vh;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+.information2{
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
     padding: 10px;
+    gap: 20px;
+
+}
+.main_img{
+    width:50rem;
+    height: 4rem;
 }
 .cartProductImage{
-    height: 10vh;
-    object-fit: cover;
+    width:5rem;
+    height: 4rem;
+    object-fit: contain;
+    /* background-color: #023E8A; */
 }
-
-article .productcartName{
-    font-size: 16px;
-    font-weight: 600;
+.productcartName{
+    width: 200vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 14px;
+    font-weight: 400;
 }
 .productPrice{
     font-size: 16px;
     color: grey;
+    text-align: right;
 }
 #removeCart{
+    font-size: 16px;
     padding: 10px 50px;
-    color: white;
     background-color: #212529;
+    color: white;
     border: none;
-    border-radius: 10px;
     cursor: pointer;
 }
-#productCartContainer .quantity .quanta-btn{
-    width: 25vh;
+#removeCart:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
 }
-#productCartContainer .productCartPriceElement{
+#productCartContainer .quantity .quanta-btn{
+    width: 30vh;
+}
+.productCartPriceElement{
+    width: 80vh;
+    height: 10vh;
     display: flex;
-    justify-content: right;
-    padding-inline: 20px;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
     color: grey;
+}
+.cate{
+    width: 40rem;
+    height: 100%;
+    /* background-color: #03045E; */
+    padding: 10px;
+    /* text-align: center; */
+}
+.cat{
+    background-color: rgb(255, 240, 179);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+.toast{
+    width:45vh;
+    height: 7vh;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    border-radius: 5px;
+    border-bottom: 0;
+    z-index: 1000;
+    animation: anim 2s linear;
+    -webkit-animation: anim 2s linear;
+    box-shadow: inset 0px 0px 0.5em 0px,
+    0px 0px 0.5em 0px ;
+}
+@keyframes anim{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+        -moz-transform:translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+    20%{
+        transform: translateX(0);
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -moz-transform:translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -moz-transform:translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
 }
